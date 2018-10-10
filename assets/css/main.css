@@ -1,7 +1,12 @@
-html body {
+html {
 	width: 100%;
 	height: 100%;
-	background-color: #ECECEB;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	font-family: 'Open Sans', sans-serif;
 }
 
 /*	COLOR
@@ -10,58 +15,126 @@ Yellow : #F9A828
 Blue : #07617D
 Black : #2E383F
 */
+.color_yellow {color :#F9A828 !important;}
+.color_blue {color :#07617D !important;}
 
-div#main {
+section#main, section#about, section#cm, section#dev, section#graph {
 	width: 100%;
 	height: 100%;
 }
-	div#main section.wrapper {
-		margin: 0 auto;
-		padding: 100px 0 0 0;
+
+div.title--h1, div.title--h3{
+	width: 50%;
+	float: left;
+	padding-right: 6px;
+}
+	div.title--h1 h1, div.title--h3 h3{
+		margin: 0;
+		color: #07617D;
+		text-align: right;
+		font-family: 'Raleway', sans-serif;
+		font-size: 45px;
+		font-weight: 900;
+		text-transform: uppercase;
 	}
-		div#main section.wrapper div.main-logo {
-			text-align: center;
-			padding: 20px 0 50px 0;
+div.title--h2, div.title--h4{
+	width: 50%;
+	float: left;
+	padding-left: 6px;
+}
+	div.title--h2 h2, div.title--h4 h4{
+		margin: 0;
+		color: #2E383F;
+		text-align: left;
+		font-family: 'Raleway', sans-serif;
+		font-size: 45px;
+		font-weight: 200;
+		text-transform: uppercase;
+	}
+	div.title--h2 h2.me, div.title--h4 h4.me{
+		font-weight: 400;
+	}
+div.title--h4 h4{
+	color: #F9A828;
+}
+
+
+
+
+
+section#main div.main-info {
+	margin: 0 auto;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	text-align: center;
+}
+
+section#main {
+	margin: 0 auto;
+	padding: 100px 0 0 0;
+	background-color: #ECECEB;
+}
+	section#main div.main-logo {
+		text-align: center;
+		padding: 20px 0 50px 0;
+	}
+		section#main div.main-logo img {
+			width: 200px;
+			height: 200px;
 		}
-			div#main section.wrapper div.main-logo img {
-				width: 200px;
-				height: 200px;
-			}
-		div#main section.wrapper div.main-titre {
-			margin: 0 auto;
-			font-family: 'Raleway', sans-serif;
-			text-transform: uppercase;
-		}
-			div#main section.wrapper div.main-titre div.main-titre--h1{
-				width: 50%;
-				float: left;
-				padding-right: 6px;
-			}
-				div#main section.wrapper div.main-titre div.main-titre--h1 h1{
-					margin: 0;
-					color: #07617D;
-					text-align: right;
-					font-size: 45px;
-					font-weight: 900;
-				}
-			div#main section.wrapper div.main-titre div.main-titre--h2{
-				width: 50%;
-				float: left;
-				padding-left: 6px;
-			}
-				div#main section.wrapper div.main-titre div.main-titre--h2 h2{
-					margin: 0;
-					color: #2E383F;
-					text-align: left;
-					font-size: 45px;
-					font-weight: 200;
-				}
-				div#main section.wrapper div.main-titre div.main-titre--h2 h2.me{
-					font-weight: 400;
-				}
-		div#main section.wrapper div.main-info {
-			margin: 0 auto;
-			font-family: 'Open Sans', sans-serif;
-			font-size: 20px;
-			text-align: center;
-		}
+	section#main div.main-title {
+		margin: 0 auto;
+	}
+
+section#about div.wrapper {
+	padding: 20px 10px 10px 10px;
+}
+	section#about div.about-info {
+		background-color: #ECECEB;
+		width: 100%;
+		height: 75%;
+	}
+	section#about div.about-portfolio {
+		width: 100%;
+		height: 25%;
+	}
+section#cm div.wrapper {
+	padding: 20px 10px 10px 10px;
+}
+	section#cm div.cm-info {
+		background-color: #ECECEB;
+		width: 100%;
+		height: 50%;
+	}
+	section#cm div.cm-portfolio {
+		width: 100%;
+		height: 50%;
+	}
+section#dev div.wrapper {
+	padding: 20px 10px 10px 10px;
+}
+	section#dev div.dev-info {
+		background-color: #ECECEB;
+		width: 50%;
+		height: 100%;
+		float: left;
+	}
+	section#dev div.dev-portfolio {
+		width: 50%;
+		height: 100%;
+		float: left;
+	}
+section#graph div.wrapper {
+	padding: 20px 10px 10px 10px;
+}
+	section#graph div.graph-info {
+		background-color: #ECECEB;
+		width: 50%;
+		height: 100%;
+		float: left;
+	}
+	section#graph div.graph-portfolio {
+		width: 50%;
+		height: 100%;
+		float: left;
+	}
